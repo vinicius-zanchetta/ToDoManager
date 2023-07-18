@@ -1,0 +1,36 @@
+{{!-- <h1>Todas as tasks!</h1> --}}
+<ul class="task-list">
+    {{#each tasks}}
+    <li>
+        {{#if this.done}}
+        <a href="/" class="title done">{{this.title}}</a>
+        {{else}}
+        <a href="/tasks/edit/{{this.id}}" class="title">{{this.title}}</a>
+        {{/if}}
+        <div class="actions">
+            <form action="/tasks/updatestatus" method="post">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <input type="hidden" name="done" value="{{this.done}}">
+                <button type="submit" title="Marcar Tarefa como Completa">
+                    <span class="material-icons">
+                        done
+                    </span>
+                </button>
+            </form>
+            <a href="/tasks/edit/{{this.id}}" title="Editar To-Do">
+                <span class="material-icons">
+                    edit
+                </span>
+            </a>
+            <form action="/tasks/remove" method="post">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <button type="submit" title="Excluir To-Do">
+                    <span class="material-icons">
+                        delete_forever
+                    </span>
+                </button>
+            </form>
+        </div>
+    </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+
+
+* {
+    font-family: Montserrat, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-color: #8012FF;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+nav {
+    margin: 8px 0;
+    color: #fff;
+    background-color: #231E39;
+    height: 5em;
+}
+
+.container {
+    margin: 0 0 8px;
+    background-color: #231E39;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+
+.create-task {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.form-control input,
+.form-control textarea {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.form-control textarea {
+    height: 50px;
+}
+
+form input[type='submit'] {
+    background-color: #03BFCB;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    font-weight: bold;
+    border: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+#navbar {
+    box-sizing: border-box;
+    height: 5em;
+    padding: 0 1em 0 1.5em;
+    background-color: #231E39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+}
+
+#navbar h2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
+#navbar ul li {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#add-button {
+    font-size: 3em;
+    color: white;
+}
+
+
+#add-button:hover {
+    color: #03BFCB;
+}
+
+
+#book-page {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.form-checkbox input {
+    padding: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #03BFCB;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style: none;
+    padding: 8px 8px 1px;
+    min-height: 60vh;
+}
+
+.task-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1em;
+    border-radius: 12px;
+    margin: 0 0 8px;
+    border: 1px solid #03BFCB;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: #1F1A36;
+}
+
+.task-list .title {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 75%;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+
+.title.done {
+    text-decoration: line-through;
+    color: #CCC;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 4px;
+}
+
+.material-icons {
+    color: white;
+    transition: .09s;
+}
+
+.material-icons:hover {
+    color: #03BFCB;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-container {
+    padding: 12px;
+}
+
+#task {
+    color: #03BFCB;
+}
+
+footer {
+    bottom: 0px;
+    margin: auto 0 8px;
+    width: 700px;
+    text-align: right;
+    background-color: #231E39;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    font-size: 12px;
+}
+
+footer p {
+    padding: 8px 12px;
+}
+
+.form-control input,
+.form-control textarea {
+    color: black;
+} 
